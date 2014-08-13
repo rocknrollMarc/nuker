@@ -1,0 +1,7 @@
+*.swp
+*.gem
+.bundle
+Gemfile.lock
+pkg/*
+.nuker
+chromedriver.log
