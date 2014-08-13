@@ -11,7 +11,7 @@ elsif ARGV[0] == "push"
   features = []
   Dir.glob(File.join("#{ARGV[2]}", "**/*.feature")).each do |feature_path|
     begin
-      gherkin = nuker::ParsesFeatures.new.parse(File.read(feature_path))
+      gherkin = Nuker::ParsesFeatures.new.parse(File.read(feature_path))
     rescue
       puts "Couldn't parse '#{feature_path}'"
       puts "Contents:"

@@ -28,7 +28,7 @@ end
 
 Given /^I create a project called "([^"]*)"$/ do |project_name|
   project project_name
-  Nuker::Project.first(:name => project_name).class.should equal Wally::Project
+  Nuker::Project.first(:name => project_name).class.should equal Nuker::Project
 end
 
 When /^I send DELETE to "([^"]*)"$/ do |project_path|
@@ -36,11 +36,11 @@ When /^I send DELETE to "([^"]*)"$/ do |project_path|
 end
 
 Then /^"([^"]*)" should exist$/ do |project_name|
-  Nuker::Project.first(:name => project_name).class.should equal Wally::Project
+  Nuker::Project.first(:name => project_name).class.should equal Nuker::Project
 end
 
 Then /^"([^"]*)" should not exist$/ do |project_name|
-  Nuker::Project.first(:name => project_name).class.should_not equal Wally::Project
+  Nuker::Project.first(:name => project_name).class.should_not equal Nuker::Project
 end
 
 When /^I visit "([^"]*)" page$/ do |project_name|

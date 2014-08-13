@@ -1,3 +1,3 @@
 module Nuker
-  VERSION = "0.0.47"
+  VERSION = "2.0.0"
 end
