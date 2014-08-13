@@ -12,7 +12,7 @@ a {
 .logo {
   position: relative;
   float: left;
-  width: 270px;
+  width: 350px;
   left: -5px;
   margin-top: -34px;
   margin-bottom: -8px;
@@ -26,8 +26,8 @@ h1 a {
   position: relative;
   display: block;
   /* margin: -40px 0 -60px; */
-  width: 197px;
-  height: 104px;
+  width: 400px;
+  height: 250px;
   background: url(nuker-logo.png) no-repeat -30px -10px;
   overflow: hidden;
   text-indent: -5000%;
