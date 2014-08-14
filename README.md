@@ -24,8 +24,8 @@ Many of the ideas have been borrowed from Matt Wynne's Relish product, but we;
 * you might also want mongo_mapper (```gem install mongo_mapper```)
 
 ## Usage
-* create a '.nuker' file and enter any authentication text you like (```echo myPassword > .wally```)
-* run nuker server, in the same dir that you put the .wally file (```wally server```)
+* create a '.nuker' file and enter any authentication text you like (```echo myPassword > .nuker```)
+* run nuker server, in the same dir that you put the .nuker file (```nuker server```)
 * check [http://localhost:4567/](http://localhost:4567/)
 * import your features (from local dir) ```nuker push http://localhost:4567/projects/<project-name> <feature-dir>```
 
