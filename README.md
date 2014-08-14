@@ -33,8 +33,6 @@ Many of the ideas have been borrowed from Matt Wynne's Relish product, but we;
 ```nuker destroy http://localhost:4567/projects/<project-name>```
 
 
-## Nuker?
-If you walk in to a British fish shop and ask for a nuker you'll receive a [pickled gherkin](https://github.com/cucumber/cucumber/wiki/Gherkin).
 
 # Heroku
 Add this to a config.ru:
