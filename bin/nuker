@@ -9,7 +9,7 @@ elsif ARGV[0] == "push"
   require "json"
   require "nuker/parses_features"
   features = []
-  Dir.glob(File.join("#{ARGV[2]}", "**/*.feature")).each do |feature_path|
+  Dir.glob(File.join("repos/send_and_store/nuke/", "**/*.feature")).each do |feature_path|
     begin
       gherkin = Nuker::ParsesFeatures.new.parse(File.read(feature_path))
     rescue
@@ -19,7 +19,7 @@ elsif ARGV[0] == "push"
     end
     features << {:path => feature_path, :gherkin => gherkin}
   end
-  RestClient.put "#{ARGV[1]}/features/?authentication_code=#{File.read(".nuker").strip}", features.to_json, {:content_type => :json, :accept => :json}
+  RestClient.put "repos/send_and_store/nuke/features/?authentication_code=#{File.read(".nuker").strip}", features.to_json, {:content_type => :json, :accept => :json}
 elsif ARGV[0] == "destroy"
   require "restclient"
   RestClient.delete "#{ARGV[1]}?authentication_code=#{File.read(".nuker").strip}"
